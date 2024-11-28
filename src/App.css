@@ -1,0 +1,121 @@
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 700px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .phaser-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    background-color: white;
+  }
+  
+  .top-buttons {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  
+  .bottom-buttons {
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  
+  .side-buttons.left {
+    position: absolute;
+    left: 50px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+  
+  .side-buttons.right {
+    position: absolute;
+    right: 50px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+  
+  button {
+    padding: 10px 12px;
+    cursor: pointer;
+    background-color: #0c6aee;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    min-width: 120px;
+  }
+  
+  button:hover {
+    background-color: #2e6bbf;
+  }
+/* General admin heading style */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  /* text-align: start; */
+  color: #007bff; /* Blue for Admin Heading */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Click history container */
+.click-history {
+  margin-top: 80px;
+  /* padding: 15px; */
+  width: 90%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Click history heading */
+.click-history h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  /* margin-bottom: 10px; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Click history text */
+.click-history p {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  color: #555;
+  line-height: 1.5;
+  word-wrap: break-word;
+  /* text-align: center; */
+}

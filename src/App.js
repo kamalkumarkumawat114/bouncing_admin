@@ -3,8 +3,9 @@ import { io } from 'socket.io-client';
 import AdminPage from './AdminPage';
 import ViewerPage from './ViewerPage';
 import './App.css';
+import { BACKEND_URL } from './config';
 
-const socket = io('http://localhost:5000');
+const socket = io(BACKEND_URL);
 
 function App() {
   const [role, setRole] = useState(null);
